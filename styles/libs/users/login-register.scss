@@ -1,0 +1,28 @@
+.login-register {
+  background: #C7A985;
+  height: 100vh;
+  &-panel {
+    width: 600px;
+    height: 549px;
+
+    background-color: white;
+    position: absolute;
+    left: calc(50% - 300px);
+    top: calc(50% - 250px);
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+  }
+
+}
+h3{
+  padding-top: 0px;
+}
+h2, h3{
+  text-align: center;
+}
+
+.full-btn{
+width: 100%;
+}

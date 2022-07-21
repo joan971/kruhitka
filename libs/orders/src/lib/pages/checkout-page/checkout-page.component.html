@@ -1,0 +1,75 @@
+<div class="checkout-page">
+  <div>
+    <p-button (click)="backToCart()" styleClass="ml-5 mb-5" label="Back to cart" icon="pi pi-arrow-left"></p-button>
+
+  </div>
+</div>
+
+<div class="grid checkout-form">
+  <div class="checkoutForm col-8">
+    <form [formGroup]="checkoutFormGroup">
+      <div class="p-fluid formgrid grid ">
+        <div class="field col-12 md:col-6 mt-5 ">
+          <div class="p-inputgroup">
+            <input formControlName="name" type="text" pInputText placeholder="Name">
+            <small *ngIf="checkoutForm.name.invalid && isSubmitted" class="p-error">Name is required.</small>
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-6 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="email" type="text" pInputText placeholder="Email">
+            <small *ngIf="checkoutForm.email.invalid && isSubmitted" class="p-error"><span
+                *ngIf="form.controls.email.errors.required">email is required</span>Email is required.</small>
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-4 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="phone" type="text" pInputText placeholder="Phone">
+            <small *ngIf="checkoutForm.phone.invalid && isSubmitted" class="p-error">Phone is required.</small>
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-12 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="street" type="text" pInputText placeholder="Street">
+            <small *ngIf="checkoutForm.street.invalid && isSubmitted" class="p-error">Street is required.</small>
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-4 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="apartment" type="text" pInputText placeholder="Apartment">
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-4 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="zip" type="text" pInputText placeholder="Zip Code">
+            <small *ngIf="checkoutForm.zip.invalid && isSubmitted" class="p-error">Zip Code is required.</small>
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-4 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="city" type="text" pInputText placeholder="City">
+            <small *ngIf="checkoutForm.city.invalid && isSubmitted" class="p-error">City is required.</small>
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-4 mt-5">
+          <div class="p-inputgroup">
+            <input formControlName="country" type="text" pInputText placeholder="Country">
+            <small *ngIf="checkoutForm.country.invalid && isSubmitted" class="p-error">Country is required.</small>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-4">
+    <orders-order-summary></orders-order-summary>
+    <div class="checkout-button mt-5 ">
+      <p-button  (click)="placeOrder()" label="Place-Order"></p-button>
+    </div>
+  </div>

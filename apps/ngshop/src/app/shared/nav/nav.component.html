@@ -1,0 +1,38 @@
+<!-- <ul>
+    <li>
+      <a routerLink="/">Home</a>
+    </li>
+    <li>
+      <a routerLink="/products">Products</a>
+    </li>
+    <li>
+      <a routerLink="/about">About Us</a>
+    </li>
+    <li>
+      <a routerLink="/contact">Contact Us</a>
+    </li>
+</ul>   -->
+
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links" >
+    <a routerLink="/">Home</a>
+    <a routerLink="/products">Products</a>
+    <a routerLink="/about">About Us</a>
+    <i class="pi pi-user p-text-secondary" *ngIf="isLogging" style="font-size: 1.5em; padding-left: 10px; cursor:pointer" routerLink="/login"></i>
+    <a class="logout" *ngIf="!isLogging"><i class="pi pi-sign-out" style="font-size: 1.5em; cursor:pointer; color:#6C757D" (click)="logoutUser()"></i></a>
+    <orders-cart-icon style="padding-left: 10px;cursor:pointer"></orders-cart-icon>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,26 @@
+.products-search{
+  display:	flex;
+  background-color: #F7F2EE;
+  border-radius: 10px;
+  height:30px;
+  width: 275px;
+
+  .pi{
+    width:25px;
+    margin: 7px;
+    font-size:large;
+    color: var(--cyan-600);
+  }
+
+  &-input{
+    height: 30px;
+    background-color: transparent;
+    color: #976d3a;
+    border: none;
+  }
+
+  :focus, :active{
+    border: none;
+    outline: none;
+  }
+}

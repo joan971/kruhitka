@@ -1,0 +1,33 @@
+
+ button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+              inset -4px -4px 12px #ffffff;
+ }
+
+
+button{
+  color: #ffffff;
+  padding: 0.6em 3em;
+  font-size: 15px;
+  border-radius: 0.2em;
+  background: #2196F3;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  cursor: pointer;
+
+
+}
+.registrationForm{
+  background: #ffff;
+  height: 100%;
+  border: 1px solid var(--surface-300);
+  border-radius: 15px;
+
+
+}
+.checkout-button {
+  button {
+    width: 100%;
+  }
+}

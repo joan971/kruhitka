@@ -1,0 +1,31 @@
+.categories-banner{
+  margin-top: 50px;
+
+  h3{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333333;
+  }
+
+  .category{
+    min-height:100px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    background-color: #EFE3CB;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .category-icon{
+    .pi{
+      font-size: 2em;
+    }
+  }
+
+  .category-name{
+    font-size: 1em;
+  }
+}

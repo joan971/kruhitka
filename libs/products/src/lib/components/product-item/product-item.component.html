@@ -1,0 +1,16 @@
+
+<div class="product-item">
+  <div class="product-item-wrapper">
+    <div class="card">
+      <div class="img">
+        <img [routerLink]="'/products/' + product.id" [src]="product.image" class="images" width="240" alt="">
+      </div>
+      <div class="info">
+        <span>{{ product.name }}</span>
+        <p>{{ product.price | currency}}</p>
+      </div>
+        <p-button label="Add to cart" icon="pi pi-shopping-cart" (onClick)="addProductToCart()" iconPos="right"
+          styleClass="add-to-card mt-4 banner-button p-button-rounded p-button-primary" ></p-button>
+    </div>
+  </div>
+</div>
